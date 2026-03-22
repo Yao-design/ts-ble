@@ -41,11 +41,14 @@ ul{padding-left:20px}
 <h2>四、追蹤與廣告</h2>
 <p>本App使用 Apple 的 App Tracking Transparency (ATT) 框架請求您的追蹤授權。在獲得您的授權後，我們才會使用系統提供的廣告識別碼（IDFA）用於廣告效果衡量與產品改進；未獲得授權時，我們不會進行追蹤，也不會讀取相關識別碼。</p>
 
-<h3>4.1 追蹤的資料類型</h3>
-<p>若您授予追蹤授權，我們將蒐集以下用於追蹤目的的資料：</p>
+<h3>4.1 追蹤的資料類型（與 App Store 產品頁／隱私權標籤對應）</h3>
+<p>本 App 已於 Info.plist 設定 <code>NSUserTrackingUsageDescription</code>，並可能依 Apple《App 隱私權》定義將下列資料用於「追蹤」（將您的資料與第三方資料連結，或與其他公司擁有之 App／網站上的使用者連結，以用於定向廣告或廣告成效衡量）。您在 App Store Connect 填寫「用於追蹤您的資料」時，應勾選與實際行為一致之項目；以下為本 App 可能涉及之類型（若某項未實際發生，請勿勾選）：</p>
 <ul>
-<li><strong>廣告識別碼（IDFA）</strong>：iOS 系統提供的設備廣告標識符，用於識別設備以進行廣告成效衡量與個性化推薦。</li>
+<li><strong>識別碼／裝置識別碼（Identifiers — Device ID）</strong>：包含廣告識別碼（IDFA），用於跨 App／網站之廣告歸因、成效衡量或與廣告／分析合作方之連結。</li>
+<li><strong>使用狀況資料 — 廣告相關資料（Usage Data — Advertising Data）</strong>：例如與廣告曝光、點擊、轉換相關之事件，若經由 IDFA 或其他識別碼與您或您的裝置連結並用於上述追蹤目的。</li>
+<li><strong>使用狀況資料 — 產品互動（Usage Data — Product Interaction）</strong>：例如 App 內與功能、畫面、內容之互動紀錄，若與第三方資料連結並用於定向廣告或廣告成效衡量（非僅限於本 App 內之第一方分析時）。</li>
 </ul>
+<p>若您僅將 IDFA 用於第一方分析且未與第三方資料連結以從事追蹤，應以實際實作為準調整 App 隱私權申報與本段敘述；未授予追蹤授權時，我們不會依 ATT 所規範之方式讀取 IDFA 或用於追蹤。</p>
 
 <h3>4.2 追蹤目的</h3>
 <ul>
